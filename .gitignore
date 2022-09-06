@@ -1,0 +1,6 @@
+.git/
+.vscode/
+build/
+bin/
+src/mapsData/
+
