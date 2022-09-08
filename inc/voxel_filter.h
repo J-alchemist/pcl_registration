@@ -9,6 +9,10 @@
 #include <boost/thread/thread.hpp>
 #include <Eigen/Dense>
 #include <pcl/common/transforms.h>
+#include <vector>
+#include <iostream>
+
+
 
 // 加载点云.pcd文件
 int load_pcd_points(pcl::PointCloud<pcl::PointXYZ>::Ptr& input_cloud) ;

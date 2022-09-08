@@ -31,10 +31,12 @@ target_link_libraries(voxel_filter
 
 set(SRC_LIST   registration_points.cpp)
 add_executable(registration_points   ${SRC_LIST})
+add_dependencies(registration_points   voxel_filter)
 target_link_libraries(registration_points  
 			voxel_filter )
 
 add_executable(fpfh   fpfh.cpp)
+add_dependencies(fpfh   voxel_filter)
 target_link_libraries(fpfh  
 			voxel_filter)
 

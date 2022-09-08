@@ -77,7 +77,6 @@ int main (int argc, char** argv) {
   setNdtParams();
   ndt.setInputTarget(filtered_target_cloud); 
   ndt.setInputSource(filtered_source_cloud);  
-
   pcl::PointCloud<pcl::PointXYZ>::Ptr output_cloud (new pcl::PointCloud<pcl::PointXYZ>);
   ndt.align (*output_cloud); 
   std::cout << "NDT has converged:" << ndt.hasConverged ()
